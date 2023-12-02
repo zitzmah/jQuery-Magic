@@ -8,12 +8,25 @@ body {
 
 }
 
+h1, h2, h3{
+    font-family: "MedievalSharp";
+}
+
 .secret {
     opacity: 0.5;
 }
 
-ul {
+h2{
+    color:#3f30e6;
+}
+
+h3{
+    color:#14690c
+}
+
+ul, .toad {
     list-style-type: none;
+    font-family: "Norican";
 }
 
 table,
@@ -22,6 +35,7 @@ td {
     border-width: 1px;
     border-color: grey;
     border-style: solid;
+    font-family: "Parisienne";
 
 }
 

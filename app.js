@@ -36,7 +36,7 @@ $(() => {
     //**************************************** */
     //YEAR THREE
     //**************************************** */
-    const $ul = $("<ul>").attr("storage", "trunk")
+    const $ul = $("<ul>").attr("storage", "trunk");
 
     const $butterBeer = $("<li>").text("butter beer")
     const $invisibilityCloak = $("<li>").addClass("secret").text("invisibility cloak")
@@ -53,7 +53,8 @@ $(() => {
     //YEAR FOUR
     //*************************************** */
     const $table = $("<table>")
-    $container.append($("<h1>").text("Spring 2017")).before($table)
+    const $semester = $("<h1>").text("Spring 2017")
+    $container.append($semester).before($table)
     const $thead = $("<thead>")
     const $th1 = $("<th>").text("Day")
     const $th2 = $("<th>").text("Classes")
@@ -124,4 +125,18 @@ $(() => {
     $leash.addClass("cabbage")
     // Fix your pet's leash by removing the class of cabbage (be sure to keep your pet's leash's original class)
     $leash.removeClass("cabbage")
+
+    /******************************************** */
+    //YEAR SEVEN
+    /******************************************** */
+    $semester.text("Fall 2018")
+    // Celebrate by buying more butter beer! Append a list item with the text 'Butter beer' as the first list item inside your unordered list with the value of trunk
+    $ul.prepend($butterBeer)
+    // Whoops! You broke your trunk when you stood on it while singing karaoke. Get a new storage container for your stuff; replace the unodered list's property of trunk with a new property of chest
+    $ul.attr("storage", "chest")
+    console.log($ul)
+
+    // Add some CSS to your page. Feel free to experiment and make this page your own
+    // Take a screenshot of your page and add it to your homework folder
+
 });
