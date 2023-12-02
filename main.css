@@ -3,8 +3,15 @@ body {
     text-align: center
 }
 
-/* In your main.css add an attribute of font-family: fantasy;to all elements that have a class that matches your pet's class */
 .toad {
     font-family: fantasy;
 
+}
+
+.secret {
+    opacity: 0.5;
+}
+
+ul {
+    list-style-type: none;
 }
