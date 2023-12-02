@@ -52,8 +52,8 @@ $(() => {
     //*************************************** */
     //YEAR FOUR
     //*************************************** */
-    $container.append($("<h1>").text("Spring 2017"))
     const $table = $("<table>")
+    $container.append($("<h1>").text("Spring 2017")).before($table)
     const $thead = $("<thead>")
     const $th1 = $("<th>").text("Day")
     const $th2 = $("<th>").text("Classes")
@@ -89,16 +89,24 @@ $(() => {
 
     $container.append($table)
 
-    //     Right above your table add an h5 that says 'Spring 2017'
-    // Inside the table add a thead element
-    // Inside the thead element add two th elements
-    // in the first th add the text Day
-    // in the second th add the text Classes
-    // Create a tr element and add two td elements inside.
-    // in the first td add the day Monday
-    // in the second td add the classes you are taking ( Herbology, Divination, History of Magic, Charms, Potions, Transfiguration, Defense Against the Dark Arts, Quidditch practice, etc.)
-    // Create more tr elements with tds inside so that you have Monday - Friday and classes each of those days
-    // In your main.css file, add a gray 1px solid border around your table, th elements and td elements
-    // In your main.css file, add a rule that will center your table on the page
+    /*********************************** */
+    //YEAR FIVE
+    /*********************************** */
+
+    // Break your wand! (select the element that contains your wand and remove it)
+    $wand.remove()
+    // Class was hard! Drink all your butter beer! (remove just the butter beer from your list)
+    $butterBeer.remove()
+    // Get a new wand (add the same element back with new text describing your new wand. Be sure to insert it after your pet in the DOM)
+    const $newWand = $("<h4>").text("walnut wand with thestral tail hair").css({ "color": "indigo" })
+    $container.append($newWand)
+    $h4.after($newWand)
+    // Send your pet on a spy mission (remove your pet from the DOM, put it somewhere else in your HTML). Make sure your pet's leash stays in your trunk (list item with the same class as your pet inside unordered list)
+    $h4.remove()
+    $('head').append($h4)
+    // Have your pet come back (remove your pet from the DOM, put it back in its original location)
+    $h4.remove()
+    $container.append($h4)
+    $h3.after($h4)
 
 });
