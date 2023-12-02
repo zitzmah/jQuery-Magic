@@ -109,4 +109,19 @@ $(() => {
     $container.append($h4)
     $h3.after($h4)
 
+    //************************************* */
+    //YEAR SIX
+    //************************************* */
+
+    // Nosey roommate alert! hide (use jQuery method hide) to hide all your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+    $(".secret").hide("slow").delay(2000)
+
+    // Nosey roommate falls asleep 2 seconds later (chain the jQuery method delay on your hide method (give argument of at least 2000) to prevent showing your secret elements too soon.
+    // Use jQuery method show to reveal all of your belongings with a class of secret (give an argument of 'slow' - to see this function in action)
+    $(".secret").show("slow")
+    // Accident! You transmogrified your pet's leash into half cabbage
+    // add the class cabbage to your pet's leash. Do not replace your pet's leash's original class. Your pet, which also has the same class should remain unaffected
+    $leash.addClass("cabbage")
+    // Fix your pet's leash by removing the class of cabbage (be sure to keep your pet's leash's original class)
+    $leash.removeClass("cabbage")
 });
